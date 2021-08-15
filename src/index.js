@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import HelloApp from './HelloApp';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HelloApp greeting={'This is REACT' + ' Aws learning also'} />
   </React.StrictMode>,
   document.getElementById('root')
 );
