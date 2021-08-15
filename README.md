@@ -5,10 +5,11 @@
 * React Hooks
 
 
-#### Building my First react Components
+#### Building my First React Components
 
 * After running ```npx create-react-app client-app``` our project has been initial setup done.
 * Next we can run ```npm install tachyons``` this will allows us to similar like bootstrap predefined class names which I can add into my components. Then we can import tachyons into index.js file.
 
+* Building my Food Card Components.
 * 
 
