@@ -9,9 +9,9 @@ import { foods } from './foods';
 ReactDOM.render(
   <React.StrictMode>
     <div>
-    <FoodCard id={foods[0].id} name={foods[0].name} email={foods[0].email} />
-    <FoodCard id={foods[1].id} name={foods[1].name} email={foods[1].email} />
-    <FoodCard id={foods[2].id} name={foods[2].name} email={foods[2].email} />
+    <FoodCard id={foods[0].id} restaurant_name={foods[0].restaurant_name} address={foods[0].address} rating={foods[0].rating} image={foods[0].image} />
+    <FoodCard id={foods[1].id} restaurant_name={foods[1].restaurant_name} address={foods[1].address} rating={foods[1].rating} image={foods[1].image}/>
+    <FoodCard id={foods[2].id} restaurant_name={foods[2].restaurant_name} address={foods[2].address} rating={foods[2].rating} image={foods[2].image} />
     </div>
   </React.StrictMode>,
   document.getElementById('root')
