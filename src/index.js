@@ -4,12 +4,13 @@ import './index.css';
 // import FoodCard from './FoodCard';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import { foods } from './foods';
-import FoodCardList from './FoodCardList';
+// import { foods } from './foods';
+// import FoodCardList from './FoodCardList';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FoodCardList foods={foods} />
+       <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
