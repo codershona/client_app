@@ -10,6 +10,7 @@ const FoodCardList = ({ foods }) => {
             <FoodCard
             key={x}
             id={foods[x].id}
+            userId={foods[x].userId}
             restaurant_name={foods[x].restaurant_name}
             address={foods[x].address}
             rating={foods[x].rating}

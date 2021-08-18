@@ -1,6 +1,7 @@
 export const foods = [
     {
       id: 1,
+      userId: 'Featured',
       restaurant_name: 'KFC - Old Kent Road',
       username: 'KFC',
       address: '671-679 Old Kent Road, London, SE151JS',
@@ -9,6 +10,7 @@ export const foods = [
     },
     {
       id: 2,
+      userId: 'Up to 10% off',
       restaurant_name: 'Burger King - Peckham',
       username: 'Burger King',
       address: '46-52 HIGH STREET, London, SE155DP',
@@ -17,6 +19,7 @@ export const foods = [
     },
     {
       id: 3,
+      userId: 'Latest Featured',
       restaurant_name: 'Shake Shack – Burgers & Shakes',
       username: 'Shake Shack',
       address: 'British Wharf Industrial Estate, London, SE145RS',
@@ -25,6 +28,7 @@ export const foods = [
     },
     {
       id: 4,
+      userId: 'Fastest delivery',
       restaurant_name: 'Dishoom',
       username: 'Dishoom',
       address: '145 Ormside Street, South Bermondsey, London, SE151TF',
@@ -33,6 +37,7 @@ export const foods = [
     },
     {
       id: 6,
+      userId: 'Top rated',
       restaurant_name: 'Coqfighter - Brockley',
       username: 'Coqfighter',
       address: '10 Coulgate Street,, London, SE42RS',
@@ -41,6 +46,7 @@ export const foods = [
     },
     {
       id: 7,
+      userId: 'New on ARK Deliveroo',
       restaurant_name: 'Tortilla - Editions - BSY',
       username: 'Tortilla',
       address: 'Unit 9, British Wharf, Landmann Way, London, SE145RS',
@@ -49,6 +55,7 @@ export const foods = [
     },
     {
       id: 8,
+      userId: 'Delivery starting from £0',
       restaurant_name: 'EatPoke - SE',
       username: 'EatPoke',
       address: 'Food Star Kitchen, Unit-3, 81 Enid Street, London, SE163RA',
@@ -57,6 +64,7 @@ export const foods = [
     },
     {
       id: 9,
+      userId: 'Only on ARK Deliveroo',
       restaurant_name: 'Biju Bubble Tea - Borough High Street',
       username: 'Biju Bubble Tea',
       address: '293-295 Borough High Street, London, SE11JG',
@@ -65,6 +73,7 @@ export const foods = [
     },
     {
       id: 10,
+      userId: 'Meal deals',
       restaurant_name: 'Falafel and Shawarma - Camberwell',
       username: 'Falafel and Shawarma',
       address: '27 Camberwell Church, London, SE58TR',
@@ -73,6 +82,7 @@ export const foods = [
     },
     {
       id: 11,
+      userId: 'Up to 50% off',
       restaurant_name: 'Caffe Paradiso - Shad Thames',
       username: 'Caffe Paradiso',
       address: '45 Shad Thames, London, SE12NJ',
