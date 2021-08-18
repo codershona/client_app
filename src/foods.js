@@ -32,14 +32,6 @@ export const foods = [
       image: 'https://cdn.pixabay.com/photo/2016/11/25/16/08/sushi-1858696__340.jpg'
     },
     {
-      id: 5,
-      restaurant_name: 'Caffe Paradiso - Shad Thames',
-      username: 'Caffe Paradiso',
-      address: '45 Shad Thames, London, SE12NJ',
-      rating: '5.0 Star',
-      image: 'https://cdn.pixabay.com/photo/2017/02/25/15/18/spring-rolls-2097978__340.jpg'
-    },
-    {
       id: 6,
       restaurant_name: 'Coqfighter - Brockley',
       username: 'Coqfighter',
@@ -78,5 +70,14 @@ export const foods = [
       address: '27 Camberwell Church, London, SE58TR',
       rating: '5.8 Star',
       image: 'https://media.istockphoto.com/photos/healthy-diet-vegetarian-wrap-with-tofu-hummus-and-hot-sauce-part-of-picture-id1074997154?k=6&m=1074997154&s=612x612&w=0&h=_CGoNbl8xUjq5hCtc1GZseW9WV6K481IRnIkF7LxWRU='
-    }
+    },
+    {
+      id: 11,
+      restaurant_name: 'Caffe Paradiso - Shad Thames',
+      username: 'Caffe Paradiso',
+      address: '45 Shad Thames, London, SE12NJ',
+      rating: '5.0 Star',
+      image: 'https://cdn.pixabay.com/photo/2017/02/25/15/18/spring-rolls-2097978__340.jpg'
+
+      }
   ];

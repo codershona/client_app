@@ -5,9 +5,10 @@ import SearchFoodBox from './SearchFoodBox';
 
 const App = () => {
     return (
-        <div>
+        <div className="tc">
         <h1>ARK Food Delivery Services</h1>
         <SearchFoodBox />
+        <br/>
         <FoodCardList foods={foods} />
         </div>
     );

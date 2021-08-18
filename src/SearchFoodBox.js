@@ -4,7 +4,13 @@ import React from "react";
 
 const SearchFoodBox = () => {
     return (
-      <input type='search' placeholder='search your fav food'/>
+    <div>
+      <input
+      className='pa3 ba b--green bg-lighten-blue'
+      type='search'
+      placeholder='search your fav food'/
+      >
+    </div>
     );
 };
 
