@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import FoodCardList from './FoodCardList';
 import { foods } from './foods';
 import SearchFoodBox from './SearchFoodBox';
+import './App.css';
 
 class App extends Component {
     constructor() {
@@ -23,7 +24,7 @@ class App extends Component {
       console.log(filteredFoods);
         return (
             <div className="tc">
-            <h1>ARK Food Delivery Services</h1>
+            <h1 className="f-subheadline">ARK Food Delivery Services</h1>
             <SearchFoodBox searchChange={this.onSearchChange} />
             <br/>
             <FoodCardList foods={filteredFoods} />
