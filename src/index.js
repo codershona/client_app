@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 // import { foods } from './foods';
 // import FoodCardList from './FoodCardList';
-import App from './App';
+import App from './react_containers/App';
 
 ReactDOM.render(
   <React.StrictMode>

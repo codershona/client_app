@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import FoodCardList from './FoodCardList';
-import { foods } from './foods';
-import SearchFoodBox from './SearchFoodBox';
+import FoodCardList from '../food_components/FoodCardList';
+import { foods } from '../foods';
+import SearchFoodBox from '../food_components/SearchFoodBox';
 import './App.css';
-import Scroll from './Scroll';
+import Scroll from '../food_components/Scroll';
 
 class App extends Component {
     constructor() {
@@ -31,10 +31,12 @@ class App extends Component {
         this.setState({ searchfield: event.target.value })
     }
     render () {
-        const filteredFoods = this.state.foods.filter(foods => {
-            return foods.restaurant_name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+        const { foods, searchfield } = this.state;
+        const filteredFoods = foods.filter(foods => {
+            return foods.restaurant_name.toLowerCase().includes(searchfield.toLowerCase());
         })
-        if (this.state.foods.length === 0) {
+        // if (foods.length === 0) {
+            if (!foods.length) {
             return <h1> LOADING....</h1>
         } else {
             return (
