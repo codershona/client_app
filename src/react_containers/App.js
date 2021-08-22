@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import FoodCardList from '../food_components/FoodCardList';
 import { foods } from '../foods';
 import SearchFoodBox from '../food_components/SearchFoodBox';
-import './App.css';
+import '../react_containers/App.css';
 import Scroll from '../food_components/Scroll';
 import ErrorBoundry from '../food_components/ErrorBoundry';
 
