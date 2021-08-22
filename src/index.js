@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import FoodCard from './FoodCard';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
+// import { foods } from './foods';
+// import FoodCardList from './FoodCardList';
+import App from './react_containers/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+       <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
