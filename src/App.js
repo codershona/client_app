@@ -8,9 +8,16 @@ class App extends Component {
     constructor() {
         super()
         this.state = {
-            foods: foods,
+            foods: [],
             searchfield: ''
         }
+        console.log('constructor 1');
+    }
+
+    componentDidMount() {
+        // console.log('check');
+        this.setState({ foods: foods })
+        console.log('componentDidMount 2');
     }
 
     onSearchChange = (event) => {
@@ -20,6 +27,7 @@ class App extends Component {
         const filteredFoods = this.state.foods.filter(foods => {
             return foods.restaurant_name.toLowerCase().includes(this.state.searchfield.toLowerCase());
         })
+        console.log('render 3');
       //   console.log(event.target.value);
       console.log(filteredFoods);
         return (
