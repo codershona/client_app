@@ -3,6 +3,7 @@ import FoodCardList from './FoodCardList';
 import { foods } from './foods';
 import SearchFoodBox from './SearchFoodBox';
 import './App.css';
+import Scroll from './Scroll';
 
 class App extends Component {
     constructor() {
@@ -37,11 +38,23 @@ class App extends Component {
             return <h1> LOADING....</h1>
         } else {
             return (
-                <div className="tc">
-                <h1 className="f-subheadline">ARK Food Delivery Services</h1>
-                <SearchFoodBox searchChange={this.onSearchChange} />
+                <div
+                className="tc"
+                >
+                <h1
+                className="f-subheadline"
+                >
+                    ARK Food Delivery Services
+                    </h1>
+                <SearchFoodBox
+                searchChange={this.onSearchChange}
+                />
                 <br/>
-                <FoodCardList foods={filteredFoods} />
+                <Scroll>
+                <FoodCardList
+                foods={filteredFoods}
+                />
+                </Scroll>
                 </div>
             );
         }
