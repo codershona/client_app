@@ -36,10 +36,9 @@ class App extends Component {
             return foods.restaurant_name.toLowerCase().includes(searchfield.toLowerCase());
         })
         // if (foods.length === 0) {
-            if (!foods.length) {
-            return <h1> LOADING....</h1>
-        } else {
-            return (
+            return !foods.length ?
+            <h1> LOADING....</h1> :
+            (
                 <div
                 className="tc"
                 >
@@ -64,6 +63,5 @@ class App extends Component {
       //   console.log(event.target.value);
     //   console.log(filteredFoods);
     }
-}
 
 export default App;
