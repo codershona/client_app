@@ -4,6 +4,7 @@ import { foods } from '../foods';
 import SearchFoodBox from '../food_components/SearchFoodBox';
 import './App.css';
 import Scroll from '../food_components/Scroll';
+import ErrorBoundry from '../food_components/ErrorBoundry';
 
 class App extends Component {
     constructor() {
@@ -18,7 +19,7 @@ class App extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({foods: foods})
-          }, 1000)
+        }, 1000)
         // console.log('check');
         // If we use any json api then we can use this method
         // fetch('https://jsonplaceholder.typicode.com/users')
@@ -52,9 +53,11 @@ class App extends Component {
                 />
                 <br/>
                 <Scroll>
+                  <ErrorBoundry>
                 <FoodCardList
                 foods={filteredFoods}
                 />
+                </ErrorBoundry>
                 </Scroll>
                 </div>
             );

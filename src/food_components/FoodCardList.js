@@ -2,6 +2,9 @@ import React from 'react';
 import FoodCard from './FoodCard';
 
 const FoodCardList = ({ foods }) => {
+  // if (true) {
+  //   throw new Error('Noooo!');
+  // }
     return(
     <div>
       {
