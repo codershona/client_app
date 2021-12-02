@@ -16,6 +16,8 @@ function App () {
     // console.log('constructor 1');
     // }
 
+    const [foods, setFoods] = useState([])
+    const [searchfield, setSearchfield] = useState('')
     // componentDidMount() {
     // setTimeout(() => {
     // this.setState({foods: foods})
@@ -28,14 +30,25 @@ function App () {
         // console.log('componentDidMount 2');
     // }
 
+    useEffect(() => {
+
+      setFoods({foods});
+
+    // fetch('https://jsonplaceholder.typicode.com/users')
+    //  .then(response => response.json())
+    //  .then(users => setFoods({users}));
+    }, []);
+
     const onSearchChange = (event) => {
-        this.setState({ searchfield: event.target.value })
+        // this.setState({ searchfield: event.target.value })
+        setSearchfield(event.target.value)
     }
-    render () {
-        const { foods, searchfield } = this.state;
-        const filteredFoods = foods.filter(foods => {
-            return foods.restaurant_name.toLowerCase().includes(searchfield.toLowerCase());
-        })
+
+    // render () {
+        // const { foods, searchfield } = this.state;
+    const filteredFoods = foods.filter(foods => {
+        return foods.restaurant_name.toLowerCase().includes(searchfield.toLowerCase());
+    })
         // if (foods.length === 0) {
             return !foods.length ?
             <h1> LOADING....</h1> :
@@ -49,7 +62,7 @@ function App () {
                     ARK Food Delivery Services
                     </h1>
                 <SearchFoodBox
-                searchChange={this.onSearchChange}
+                searchChange={onSearchChange}
                 />
                 <br/>
                 <Scroll>
@@ -65,6 +78,6 @@ function App () {
         // console.log('render 3');
       //   console.log(event.target.value);
     //   console.log(filteredFoods);
-    }
+    // }
 
 export default App;
