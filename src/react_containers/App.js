@@ -28,7 +28,7 @@ function App () {
         // console.log('componentDidMount 2');
     // }
 
-    onSearchChange = (event) => {
+    const onSearchChange = (event) => {
         this.setState({ searchfield: event.target.value })
     }
     render () {
